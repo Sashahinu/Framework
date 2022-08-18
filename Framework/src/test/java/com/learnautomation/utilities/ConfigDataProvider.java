@@ -12,7 +12,7 @@ public class ConfigDataProvider {
 	
 	public ConfigDataProvider() {
 		
-		File f = new File("/Users/safashabeer/eclipse-workspace/Framework/Config/config.properties");
+		File f = new File(System.getProperty("user.dir")+"/Config/config.properties");
 	
 		try {
 			FileInputStream fis = new FileInputStream(f);

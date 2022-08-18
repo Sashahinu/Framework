@@ -13,7 +13,7 @@ public class ExcelDataProvider {
 	
 	public ExcelDataProvider() {
 	
-	File f = new File("/Users/safashabeer/eclipse-workspace/Framework/TestData/Login.xlsx");
+	File f = new File(System.getProperty("user.dir")+"/TestData/Login.xlsx");
 	
 	try 
 	{

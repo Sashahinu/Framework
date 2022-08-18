@@ -18,7 +18,7 @@ public class Helper {
 	{ 
 		
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String Screenshotpath = "/Users/safashabeer/eclipse-workspace/Framework/Screenshots/CRM_"+getCurrentDateTime()+".png";
+		String Screenshotpath = System.getProperty("user.dir")+"/Screenshots/CRM_"+getCurrentDateTime()+".png";
 		try {
 			FileHandler.copy(src,new File(Screenshotpath ));
 			System.out.println("Screeshot ...captured ...");

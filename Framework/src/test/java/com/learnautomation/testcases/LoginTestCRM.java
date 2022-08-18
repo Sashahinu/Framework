@@ -1,6 +1,10 @@
 package com.learnautomation.testcases;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -33,11 +37,13 @@ public class LoginTestCRM extends BaseClass {
 		
 	    }
 	    
+	    /*
+	    
 	    @Test(priority=2)
 	    public void loginApp1() {
 	    	
 	    	logger = report.createTest("LOGOUT");
-	    	logger.fail("LOGOUT FAILED");	
-	    }
+	    	Assert.fail("LOGOUT FAILED");	
+	    } */
 
 }

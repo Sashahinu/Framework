@@ -16,7 +16,7 @@ public class LoginPage {
 	
 	//New comment added  to check git functionalities
 	
-	@FindBy(name="email1") WebElement uname;
+	@FindBy(name="email") WebElement uname;
 	@FindBy(name="password") WebElement pass;
 	@FindBy(xpath="//div[text()='Login']") WebElement loginButton;
 	
@@ -24,8 +24,9 @@ public class LoginPage {
 		uname.sendKeys(usname);
 		Thread.sleep(5000);
 		pass.sendKeys(pwd);
-		Thread.sleep(5000);		
+		Thread.sleep(3000);		
 		loginButton.click();
+		System.out.println("CLICKED");
 	
 	}
 	
